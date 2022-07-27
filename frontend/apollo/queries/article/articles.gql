@@ -1,0 +1,27 @@
+query {
+  articles {
+    data {
+      id
+      attributes {
+        slug
+        title
+        content
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        category {
+          data {
+            id
+            attributes {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}

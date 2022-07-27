@@ -1,0 +1,18 @@
+query {
+  intros {
+    data {
+      id
+      attributes {
+        title
+        content
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

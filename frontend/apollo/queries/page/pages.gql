@@ -1,0 +1,19 @@
+query {
+  pages {
+    data {
+      id
+      attributes {
+        slug
+        title
+        content
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

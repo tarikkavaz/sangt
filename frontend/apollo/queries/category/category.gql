@@ -1,0 +1,11 @@
+query Categories($slug: String) {
+  categories(filters: { slug: { eq: $slug } }) {
+    data {
+      id
+      attributes {
+        name
+        slug
+      }
+    }
+  }
+}

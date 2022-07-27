@@ -1,0 +1,11 @@
+{
+  "name": "sangt",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Strapi, Apollo, Nuxt.js, GraphQL, Tailwind CSS",
+  "scripts": {
+    "setup": "yarn --cwd backend install & yarn --cwd frontend install",
+    "dev": "yarn --cwd backend run develop & yarn --cwd frontend run dev"
+  }
+}
