@@ -5,7 +5,10 @@
   "license": "MIT",
   "description": "Strapi, Apollo, Nuxt.js, GraphQL, Tailwind CSS",
   "scripts": {
-    "setup": "yarn --cwd backend install & yarn --cwd frontend install",
-    "dev": "yarn --cwd backend run develop & yarn --cwd frontend run dev"
+    "setup": "concurrently \"yarn --cwd backend install\" \"yarn --cwd frontend install\"",
+    "dev": "concurrently \"yarn --cwd backend run develop\" \"yarn --cwd frontend run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^7.4.0"
   }
 }
