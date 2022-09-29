@@ -11,7 +11,8 @@
 ```bash
 git clone https://github.com/tarikkavaz/sangt.git
 cd sangt
-yarn setup
+yarn install  #installs "concurrently" 
+yarn setup    #installs all dependencies for both frontend and backend
 ```
 
 ---
@@ -19,7 +20,7 @@ yarn setup
 ## Develop:
 
 ```bash
-yarn dev
+yarn dev      #runs both frontend and backend in dev mode
 ```
 
 open: http://localhost:3000/ & http://localhost:1337/admin/
